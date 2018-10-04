@@ -5,13 +5,18 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: ruby-2.4.4
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+```sh
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
+```
 
 * Database initialization
 
@@ -20,5 +25,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
