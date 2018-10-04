@@ -25,3 +25,14 @@ $ rails db:seed
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+* How to test the authentication from terminal
+
+```sh
+$ curl -v -X "POST" "http://localhost:3000/auth/sign_in" \
+     -H "Content-Type: application/json; charset=utf-8" \
+     -d $'{
+  "email": "user@mail.net",
+  "password": "secretpassword"
+}'
+```
