@@ -26,6 +26,13 @@ $ rails db:seed
 
 * Deployment instructions
 
+* How to access outside localhost
+
+Let the port go through the firewall (3000)
+Then:
+```sh
+$ rails server -b 0.0.0.0
+```
 * How to test the authentication from terminal
 
 ```sh
