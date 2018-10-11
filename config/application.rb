@@ -22,7 +22,7 @@ module RailsDeviseTokenAuth
     # Initialize configuration defaults for originally generated Rails version.
 
     
-
+    config.middleware.use ActionDispatch::Cookies
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins 'http://localhost:4200'
