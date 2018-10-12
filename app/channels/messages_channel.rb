@@ -1,5 +1,6 @@
 class MessagesChannel < ApplicationCable::Channel
-  def subscribed
+  def subscribed(chat_room_id)
+    stream_for chat_room
   end
 
   def unsubscribed
