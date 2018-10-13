@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
          :omniauthable
   include DeviseTokenAuth::Concerns::User
   has_and_belongs_to_many :chatrooms
-  has_many :message
+  has_many :messages
 end
